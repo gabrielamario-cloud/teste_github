@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcular notas</title>
+    <link rel="stylesheet" href="notass.css">
+</head>
+<body>
+
+    <header>
+        <h1>calcular Notas</h1>
+    </header>
+
+     <input type="text" id="ra" placeholder="RA">
+     <br>
+    <input type="text" id="nome" placeholder="Nome">
+    <br>
+    <input type="number" id="n1" placeholder="Nota 1">
+    <br>
+    <input type="number" id="n2" placeholder="Nota 2">
+    <br>
+    <input type="number" id="n3" placeholder="Nota 3">
+    <br>
+    <input type="number" id="n4" placeholder="Nota 4">
+    <br>
+
+    <input type="number" id="me" placeholder="Média dos Exercícios">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div class="resultado" id="resultado"></div>
+</div>
+
+        <section class="table-section">
+            <h2>Tabela de Notas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOTA</th>
+                        <th>SITUACAO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="row-abaixo">
+                        <td>Menor que 40     </td>
+                        <td>Reprovado</td>
+                    </tr>
+                    <tr id="row-normal">
+                        <td>40 até 60</td>
+                        <td>Reprovado</td>
+                    </tr>
+                    <tr id="row-sobrepeso">
+                        <td>60 até 7.5</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr id="row-ob1">
+                        <td>7.5 até 100</td>
+                        <td>Aprovado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Exercício - Calcular Media</p>
+    </footer>
+
+    <script src="nota.js"></script>
+</body>
+</html>
